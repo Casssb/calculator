@@ -19,7 +19,7 @@ body {
 
 .calc-container {
     max-width: 80vw;
-    height: 90vh;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(140px, auto) repeat(5, 100px);
@@ -48,5 +48,8 @@ button {
     .calc-container {
         grid-template-columns: repeat(4, 60px);
         grid-template-rows: minmax(100px, auto) repeat(5, 60px);
+    }
+    button {
+        font-size: x-large;
     }
 }
