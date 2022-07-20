@@ -1,55 +1,85 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-
+    font-family: 'Coda', cursive;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 2, 5, 1) 19%,
+    rgba(18, 15, 55, 1) 20%,
+    rgba(4, 87, 102, 1) 23%,
+    rgba(54, 19, 103, 0.8953365384615385) 35%,
+    rgba(6, 103, 85, 1) 39%,
+    rgba(0, 24, 19, 1) 41%,
+    rgba(0, 44, 35, 1) 46%,
+    rgba(0, 64, 51, 1) 51%,
+    rgba(9, 41, 35, 1) 56%,
+    rgba(64, 5, 140, 1) 73%,
+    rgba(118, 53, 154, 1) 85%,
+    rgba(41, 16, 52, 1) 92%,
+    rgba(40, 173, 150, 1) 100%,
+    rgba(21, 189, 160, 1) 108%
+  );
 }
 
-
 .calc-container {
-    max-width: 80vw;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(140px, auto) repeat(5, 100px);
+  max-width: 80vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(140px, auto) repeat(5, 100px);
 }
 
 .screen {
-    grid-column: 1 / -1;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-around;
-    padding: 0.2rem;
-    word-wrap: break-word;
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.2rem;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
 button {
-    font-size: 2.5rem;
-    cursor: pointer;
-    outline: none;
-    border: 0.1rem solid rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Coda', cursive;
+  border: 0.1rem solid rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 769px) {
+  .calc-container {
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+  }
+  button {
+    font-size: x-large;
+  }
+}
 
 @media only screen and (max-width: 480px) {
-    .calc-container {
-        grid-template-columns: repeat(4, 60px);
-        grid-template-rows: minmax(100px, auto) repeat(5, 60px);
-    }
-    button {
-        font-size: x-large;
-    }
+  .calc-container {
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 60px);
+  }
+  button {
+    font-size: x-large;
+  }
 }
