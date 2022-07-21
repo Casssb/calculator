@@ -92,6 +92,7 @@ function clearElement() {
 
 function back() {
   currentEntryScreen.textContent = currentEntryScreen.textContent.slice(0, -1);
+  currentOperand = currentOperand.slice(0, -1);
 }
 
 //function to handle keyboard entries
