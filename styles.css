@@ -47,6 +47,7 @@ body {
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -63,6 +64,8 @@ button {
   font-family: 'Fjalla One', sans-serif;
   border: 0.1rem solid rgba(0, 0, 0, 0.5);
 }
+
+/* media queries for medium and small screens */
 
 @media only screen and (max-width: 769px) {
   .calc-container {

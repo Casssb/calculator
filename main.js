@@ -32,7 +32,7 @@ function prepareOperation(operator) {
   previousEntryScreen.textContent = `${previousOperand} ${operation}`;
 }
 
-//stop it
+//oh no you don't
 function prepareCalculation() {
   if (operation === '÷' && currentOperand === '0') {
     currentEntryScreen.textContent = `${previousOperand} ${operation} ${currentOperand} = 🖕`;
