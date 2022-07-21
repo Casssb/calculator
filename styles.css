@@ -34,6 +34,7 @@ body {
     rgba(21, 189, 160, 1) 108%
   );
 }
+/* I used https://cssgradient.io/ for the above gradient choice */
 
 .calc-container {
   max-width: 80vw;
@@ -47,7 +48,6 @@ body {
   grid-column: 1 / -1;
   background-color: rgba(0, 0, 0, 0.9);
   color: rgba(255, 255, 255, 0.8);
-  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -57,13 +57,47 @@ body {
   word-break: break-all;
 }
 
+.current-entry {
+  font-size: xx-large;
+}
+
+.previous-entry {
+  font-size: small;
+}
+
 button {
-  font-size: 2.5rem;
+  font-size: xx-large;
   cursor: pointer;
   outline: none;
   font-family: 'Fjalla One', sans-serif;
+  color: #000;
   border: 0.1rem solid rgba(0, 0, 0, 0.5);
 }
+
+.number, .sign {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.number:hover, .sign:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.operator, .back, .clear, .clear-element {
+  background-color: rgba(201, 201, 201, 0.8);
+}
+
+.operator:hover, .back:hover, .clear:hover, .clear-element:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.equals {
+  background-color: rgba(65, 56, 240, 0.8);
+}
+
+.equals:hover {
+  background-color: rgb(146, 141, 253);
+}
+
 
 /* media queries for medium and small screens */
 
