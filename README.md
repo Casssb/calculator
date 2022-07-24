@@ -1,4 +1,4 @@
-# calculator
+# Calculator
 
 The final project of The Odin Project Foundations curriculum using vanilla JS, HTML & CSS. I was loosely using the Windows 10 calculator for styling. 
 
