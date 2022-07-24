@@ -4,6 +4,8 @@ The final project of The Odin Project Foundations curriculum using vanilla JS, H
 
 [Check it out here!](https://casssb.github.io/calculator/) :point_left:
 
+![Image of live version](./img/calculator.PNG)
+
 ## Thoughts
 
 The most challenging part of this project was trying to keep everything well ordered. My aim was to make the code logical and easy to understand. I actually created a working calculator app pretty quickly but then had to continually re-factor my code to make sure the functions were keeping to simple tasks and the code flow made sense.
